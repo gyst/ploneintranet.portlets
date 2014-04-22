@@ -10,4 +10,5 @@ parts/
 include/
 lib/
 develop-eggs/
+var/
 .installed.cfg
