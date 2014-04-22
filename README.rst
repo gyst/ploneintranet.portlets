@@ -10,7 +10,8 @@ This PoC currently has two features:
 - A custom ReversePortletRetriever reorders the sequence of portlets.
 
 This is currently hacked via overrides.zcml and ought to use some
-more elegant component registration instead.
+more elegant component registration instead that finds a way to hook
+into the portletmanager adapter factory.
 
 - A custom GridPortletRenderer wraps portlets in a div with markup
   that indicates the priority of the portlet.
@@ -31,6 +32,10 @@ Roadmap
 
 * Expand the renderer into an actual grid positioning system plus the possibility
   to render portlets in multiple modes (e.g. a blown-up "hero" mode).
+
+* Replace #content-core rendering with a portlet based rendering and drop all
+  content except for one portlet manager. I.e. replace the main layout logic
+  for a page with the portlet-defined layout engine prototyped here.
 
 Not On The Roadmap
 ------------------
