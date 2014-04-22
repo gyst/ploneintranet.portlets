@@ -4,3 +4,10 @@
 dist/
 Paste*.egg
 *.mo
+bin/
+local/
+parts/
+include/
+lib/
+develop-eggs/
+.installed.cfg
